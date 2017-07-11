@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TempCell" rowHeight="115" id="jMx-vg-jaq" customClass="TempCell" customModule="Lawboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="126"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jMx-vg-jaq" id="yRe-cX-GGw">
+                <frame key="frameInset" width="506" height="125"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jge-G8-rfA">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone" translatesAutoresizingMaskIntoConstraints="NO" id="uyL-Zp-NaJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="CXp-nQ-bdd"/>
+                                    <constraint firstAttribute="width" constant="110" id="klk-p3-tUb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbQ-xp-t5b">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="更新时间:04-05 12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWE-hP-5yn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Ach-Fb-Dao"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="阅读量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzd-lE-VQ5">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="bLW-FI-PEc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uyL-Zp-NaJ" firstAttribute="centerY" secondItem="Jge-G8-rfA" secondAttribute="centerY" id="BsX-ts-qDW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DbQ-xp-t5b" secondAttribute="trailing" constant="145" id="DAK-ql-G4s"/>
+                            <constraint firstAttribute="trailing" secondItem="uyL-Zp-NaJ" secondAttribute="trailing" constant="10" id="Egb-Zp-s8h"/>
+                            <constraint firstItem="DbQ-xp-t5b" firstAttribute="leading" secondItem="Jge-G8-rfA" secondAttribute="leading" constant="10" id="Of6-KK-jr1"/>
+                            <constraint firstAttribute="bottom" secondItem="LWE-hP-5yn" secondAttribute="bottom" constant="10" id="RBK-4r-NV7"/>
+                            <constraint firstItem="uyL-Zp-NaJ" firstAttribute="leading" secondItem="LWE-hP-5yn" secondAttribute="trailing" id="Sxa-4B-KPL"/>
+                            <constraint firstItem="uyL-Zp-NaJ" firstAttribute="leading" secondItem="Gzd-lE-VQ5" secondAttribute="trailing" id="abM-go-z5I"/>
+                            <constraint firstItem="LWE-hP-5yn" firstAttribute="top" secondItem="Gzd-lE-VQ5" secondAttribute="bottom" constant="5" id="guH-c0-UsU"/>
+                            <constraint firstItem="LWE-hP-5yn" firstAttribute="leading" secondItem="Jge-G8-rfA" secondAttribute="leading" constant="10" id="h7y-qI-Ymo"/>
+                            <constraint firstItem="Gzd-lE-VQ5" firstAttribute="top" secondItem="DbQ-xp-t5b" secondAttribute="bottom" id="r4J-9u-dy7"/>
+                            <constraint firstItem="DbQ-xp-t5b" firstAttribute="top" secondItem="Jge-G8-rfA" secondAttribute="top" constant="5" id="ukE-hW-qwR"/>
+                            <constraint firstItem="Gzd-lE-VQ5" firstAttribute="leading" secondItem="LWE-hP-5yn" secondAttribute="leading" id="zjQ-tl-xCf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Jge-G8-rfA" firstAttribute="top" secondItem="yRe-cX-GGw" secondAttribute="top" constant="5" id="Byl-mi-ny2"/>
+                    <constraint firstAttribute="trailing" secondItem="Jge-G8-rfA" secondAttribute="trailing" constant="10" id="ODZ-MV-QC4"/>
+                    <constraint firstItem="Jge-G8-rfA" firstAttribute="leading" secondItem="yRe-cX-GGw" secondAttribute="leading" constant="10" id="hOu-ST-k5J"/>
+                    <constraint firstAttribute="bottom" secondItem="Jge-G8-rfA" secondAttribute="bottom" constant="5" id="s4c-qx-DQ9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="coView" destination="Jge-G8-rfA" id="Wkd-hq-OTU"/>
+                <outlet property="labelLeftConstant" destination="DAK-ql-G4s" id="2mz-PG-5kL"/>
+                <outlet property="newImage" destination="uyL-Zp-NaJ" id="7p0-sq-Cg2"/>
+                <outlet property="newLabel" destination="DbQ-xp-t5b" id="7sf-TM-pgO"/>
+                <outlet property="readCount" destination="Gzd-lE-VQ5" id="9bg-58-Tz1"/>
+                <outlet property="timeLabel" destination="LWE-hP-5yn" id="VIP-La-p3Z"/>
+            </connections>
+            <point key="canvasLocation" x="-19" y="-65"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iphone" width="960" height="540"/>
+    </resources>
+</document>

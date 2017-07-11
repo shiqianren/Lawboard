@@ -1,0 +1,6 @@
+framework module Pods_Lawboard {
+  umbrella header "Pods-Lawboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
